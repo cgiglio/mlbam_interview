@@ -95,22 +95,22 @@ $(function() {
         if (delta == -1) {
         	// Handling prev case
         	// Remove out-of-sight element
-    		$('#' + right + "_item").remove();
+      		$('#' + right + "_item").remove();
 
-    		// Advance the left and right trackers
-        	if (left == 0) left = gameData.length - 1;
-    		else left -= 1;
-    		if (right == 0) right = gameData.length - 1;
-    		else right -= 1;
+      		// Advance the left and right trackers
+          if (left == 0) left = gameData.length - 1;
+      		else left -= 1;
+      		if (right == 0) right = gameData.length - 1;
+      		else right -= 1;
 
-    		// Create new element for carousel on left
-    		createThumbnail(carousel, gameData[left], left, false);
+      		// Create new element for carousel on left
+      		createThumbnail(carousel, gameData[left], left, false);
         } else {
         	// Handling next case
         	// Remove out-of-sight element
-    		$('#' + left + "_item").remove();
+      		$('#' + left + "_item").remove();
 
-    		// Advance the left and right trackers
+      		// Advance the left and right trackers
         	if (right == gameData.length - 1) right = 0;
         	else right += 1;
         	if (left == gameData.length - 1) left = 0;
