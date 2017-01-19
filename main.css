@@ -1,0 +1,156 @@
+/*General Page Formatting*/
+body {
+	background-image: url('background.jpg');
+	font-family: Lucida Grande;
+}
+
+/*Next/Previous Button Formatting*/
+button {
+	background: none;
+	border: none;
+	width: 5%;
+	float: left;
+	transform: translateY(25%);
+}
+
+/*Make sure button doesn't have blue halo on click*/
+button:focus, input[type="button"]:active {
+	outline: none;
+}
+
+/*Carousel CSS*/
+#carousel {
+	position: relative;
+	width: 80%;
+	margin:	25% auto;
+	height: 250px;
+}
+
+/*****************************************************************
+Carousel Thumbnails + Animations
+******************************************************************/
+/*Styles image in thumbnail*/
+.thumbnail {
+	margin: 10px;
+	box-shadow: 1px 1px 7px 1px #707070;
+}
+
+#carousel ul {
+   font-size: 0;
+   white-space: nowrap;
+   top: 0;
+   width: 90%;
+   margin: 0; padding: 0;
+   float: left;
+   height: 100%;
+}
+
+#carousel ul img { 
+	transition: all .2s ease-in-out; 
+}
+
+#carousel li {
+   display: inline-block;
+   vertical-align: top;
+   width: auto;
+   height: auto;
+   min-width: 124px;
+   min-height: 70px;
+   white-space: normal;
+   text-align: center;
+}
+
+#carousel button img {
+  background: none;
+  margin: 0;
+}
+
+/*Hover animations*/
+#carousel ul img:hover { 
+	transform: scale(1.25); 
+}
+
+#carousel ul li:hover { 
+	margin: 0 -30px;
+}
+
+#carousel ul li:hover div {
+	margin-top: 15px;
+}
+
+/*****************************************************************
+Hover Items Styling + Secondary Animations
+******************************************************************/
+
+/*General hover container*/
+.hover_data {
+	height: auto;
+	overflow: hidden;
+    background-color: #272B33;
+    border-radius: 3px;
+    box-shadow: 1px 1px 20px 1px #3C4147;
+    color: #F2F2F9;
+}
+
+/*Box Score general table formatting*/
+table {
+    border-collapse: collapse;
+}
+
+/*Box Score Formatting*/
+.home td, .away td {
+    border: 1px solid #92A3AB;
+    font-family: Lucida Grande;
+    font-size: 12pt;
+    min-width: 10px;
+}
+
+/*Team Record */
+.record {
+	line-height: 10%;
+	font-size: 8pt;
+}
+
+/*Location Data*/
+.location {
+	font-size: 8pt;
+}
+
+/*Win/Loss/Save Pitcher Data*/
+.pitcher_data {
+	font-size: 8pt;
+	text-align: right;
+}
+
+/*Box Score R/H/E Formatting*/
+.box_info {
+    font-size: 8pt;
+    background-color: #707070;
+    border: 1px solid #92A3AB;
+}
+
+/*Game Title Formatting*/
+.tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -15%;
+    text-shadow: 2px 2px #505050;
+    color: white;
+	font-size: 14pt;
+}
+
+/* Show the game title text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*MLBTV logo in hover area*/
+.mlbtv {
+	float: left;
+	margin: 10% 5%;
+}
